@@ -2,11 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- 1.添加视口 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>自己写的移动端项目</title>
+    <!-- 2.引入规则:
+        2.1.CSS在head中引入link;
+        2.2.js在body结束标签上面引入;
+        2.3.先引入第三方的包(方便我们自己使用和覆盖);
+        2.4.再引入自己的包;
+        2.5.如果有依赖关系,先引入被依赖的包,再移入不被依赖的包
+    -->
+    <!-- 引入mui的css样式 -->
+        <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <!-- 引入字体图标的样式 -->
+        <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <!-- 引入less文件的样式,记得样式要加/less,相当于自己写的样式 -->
+        <link rel="stylesheet/less" href="./lib/less/index.less">
+    <!-- 引入less.js编译文件,记得用script导入 -->
+    <script src="./lib/less/less.js"></script>
 </head>
 <body>
-    这是我写的移动端页面
+  <!-- 3.引入js文件 -->
+  
+  <!-- 3.1引入zepto文件,这相当于是移动端的jq -->
+    <script src="./lib/zepto/zepto.min.js"></script>
+  <!-- 3.2引入mui -->
+    <script src="./lib/mui/js/mui.min.js"></script>
+  <!-- 3.3引入模板引擎template-web,这是最新4.0版 -->
+    <script src="./lib/artTemplate/template-web.js"></script>
+  <!-- 3.4最后引入自己写的js -->
+  <script src="./js/index.js"></script>
+
 </body>
 </html>
