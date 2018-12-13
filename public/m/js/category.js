@@ -14,12 +14,18 @@ success:function(obj){
 var html=template('categoryLeftTpl',obj)
 $('.main-left ul').html(html);
 }
-
 })  
-
 // 获取左侧点击事件(移动端用tap)的id
 $('.main-left ul').on('tap','li a' ,function(){
-    var id= $(this).data('id');
+    // 给父元素li添加active类
+    // console.log(this);
+    $(this).parent().addClass('active').siblings().removeClass('active'); 
+
+    // 获取id第一种方法
+    // var id= $(this).data('id');
+    // 第二种获取id办法
+    var id =$(this).attr('data-id');
+    // console.log(id);
     // alert(id);
     // 右侧区域滚动数据渲染
 $.ajax({
@@ -29,22 +35,12 @@ $.ajax({
     //    console.log(obj);
     // 将数据添加到页面上
         var html= template('categoryRightTpl',obj);
-        console.log(html);
+        // console.log(html);
         $('.main-right ul').html(html);
 
     }
-
-
-
-
 })
 })
-
-
-
-
-
-
 
 })
 
