@@ -15,7 +15,39 @@ var html=template('categoryLeftTpl',obj)
 $('.main-left ul').html(html);
 }
 
-})    
+})  
+
+// 获取左侧点击事件(移动端用tap)的id
+$('.main-left ul').on('tap','li a' ,function(){
+    var id= $(this).data('id');
+    // alert(id);
+    // 右侧区域滚动数据渲染
+$.ajax({
+    url:'/category/querySecondCategory',
+    data:{id:id},
+    success:function(obj){
+    //    console.log(obj);
+    // 将数据添加到页面上
+        var html= template('categoryRightTpl',obj);
+        console.log(html);
+        $('.main-right ul').html(html);
+
+    }
+
+
+
+
 })
+})
+
+
+
+
+
+
+
+})
+
+
 
 
