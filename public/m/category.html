@@ -127,12 +127,13 @@
     <!-- 准备模板,记得一定要添加type="text/html,不添加会识别为js代码执行" -->
     <script type="text/html" id="categoryLeftTpl">
         {{each rows value index}}
-        <li>
-            <a href="#">
-                <img src="./images/brand1.png" alt="">
-                <p>耐克</p>
+        <!-- 添加点击类名 -->
+        <li class="{{index==0 ?'active':''}}">
+            <a href="#" data-id='{{value.id}}'>
+                {{value.categoryName}}
             </a>
         </li>
+    
         {{/each}}
     </script>
 
