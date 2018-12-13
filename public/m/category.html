@@ -33,51 +33,67 @@
     <!-- 主体区域 -->
     <main id="main">
         <div class="main-left">
-            <ul>
-                <li class="active">
-                    <a href="#">运动装</a>
-                </li>
-                <li>
-                    <a href="#">运动装</a>
-                </li>
-                <li>
-                    <a href="#">运动装</a>
-                </li>
-                <li>
-                    <a href="#">运动装</a>
-                </li>
-                <li>
-                    <a href="#">运动装</a>
-                </li>
-            </ul>
+            <!-- 添加左侧的区域滚动 -->
+            <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <!--这里放置真实显示的DOM内容-->
+                        <ul>
+                                <li class="active">
+                                    <a href="#">运动装</a>
+                                </li>
+                                <li>
+                                    <a href="#">运动装</a>
+                                </li>
+                                <li>
+                                    <a href="#">运动装</a>
+                                </li>
+                                <li>
+                                    <a href="#">运动装</a>
+                                </li>
+                                <li>
+                                    <a href="#">运动装</a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+
+
+
         </div>
         <div class="main-right">
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="./images/brand1.png" alt="">
-                        <p>耐克</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/brand2.png" alt="">
-                        <p>阿迪</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/brand3.png" alt="">
-                        <p>耐克</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/brand4.png" alt="">
-                        <p>耐克</p>
-                    </a>
-                </li>
-            </ul>
+            <!-- 右边的区域滚动 -->
+            <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <!--这里放置真实显示的DOM内容-->
+                        <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/brand1.png" alt="">
+                                        <p>耐克</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/brand2.png" alt="">
+                                        <p>阿迪</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/brand3.png" alt="">
+                                        <p>耐克</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/brand4.png" alt="">
+                                        <p>耐克</p>
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+          
         </div>
     </main>
     <!-- 尾部区域 -->
@@ -105,6 +121,20 @@
             </li>
         </ul>
     </footer>
+
+    <!-- 分类页面模板引擎的使用 -->
+    <!-- 左边模块开始 -->
+    <!-- 准备模板,记得一定要添加type="text/html,不添加会识别为js代码执行" -->
+    <script type="text/html" id="categoryLeftTpl">
+        {{each rows value index}}
+        <li>
+            <a href="#">
+                <img src="./images/brand1.png" alt="">
+                <p>耐克</p>
+            </a>
+        </li>
+        {{/each}}
+    </script>
 
 
 

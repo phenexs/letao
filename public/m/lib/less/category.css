@@ -62,10 +62,10 @@ img {
 }
 #footer ul li {
   width: 25%;
+  text-align: center;
 }
 #footer ul li a {
   color: #fff;
-  text-align: center;
   padding: .085rem;
 }
 #footer ul li a span {
@@ -80,9 +80,14 @@ body {
 }
 #main {
   display: flex;
+  height: 100%;
 }
 #main .main-left {
   width: .8rem;
+  position: relative;
+}
+#main .main-left ul {
+  min-height: 5.78rem;
 }
 #main .main-left ul li.active a {
   color: #006699;
@@ -100,11 +105,14 @@ body {
 }
 #main .main-right {
   flex: 1;
+  position: relative;
 }
 #main .main-right ul {
   padding: 10px;
   flex-wrap: wrap;
   display: flex;
+  min-height: 5.78rem;
+  align-content: flex-start;
 }
 #main .main-right ul li {
   width: 33.33%;
