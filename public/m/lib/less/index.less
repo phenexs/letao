@@ -1,0 +1,120 @@
+@import 'base.less';
+// 轮播图区域
+#main {
+    #slide {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// 导航区
+#nav {
+    padding: .1rem;
+    >ul {
+        display: flex;
+        flex-wrap: wrap;
+        >li {
+            width: 33.33%;
+            a {
+                display: block;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// 广告区
+#banner {
+    display: flex;
+    padding: .1rem;
+    .banner-left {
+        width: 66.66%;
+        height: 2.4rem;
+        a {
+            display: block;
+            font-size: 0;
+            // font-size这一步非常关键
+            img {
+                width: 50%;
+            }
+        }
+    }
+    .banner-right {
+        width: 33.33%;
+        height: 2.4rem;
+        a {
+            display: block;
+            img {
+                width: 100%;
+                height: 2.4rem;
+            }
+        }
+    }
+}
+//品牌专区
+ #brand {
+     padding: .1rem;
+    >.tittle{
+        width: 100%;
+        a{
+            display: block;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    >.content{
+        ul{
+            display: flex;
+            flex-wrap:wrap;
+            li{
+                width: 25%;
+                a{
+                    display: block;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+ }
+
+//  生活区
+
+#sports,#women,#man{
+    padding: .1rem;
+    >.tittle{
+        width: 100%;
+        a{
+            display: block;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .content{
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                width: 50%;
+                a{
+                    display: block;
+                    box-shadow: 0 0 0.5px black;
+                    background-color: #fff;
+                    text-align: center;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

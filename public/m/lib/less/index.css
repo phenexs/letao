@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+}
+body {
+  padding: .45rem 0;
+  height: 100%;
+}
+#header {
+  display: flex ;
+  padding-left: .45rem;
+  padding-right: .45rem;
+  height: .45rem;
+  background-color: #006699;
+  color: #fff;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+}
+#header h4 {
+  margin: 0;
+  width: 2.85rem;
+  text-align: center;
+  line-height: .45rem;
+  font-weight: normal;
+}
+#header a {
+  width: .45rem;
+  height: .45rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  line-height: .45rem;
+  color: #fff;
+}
+#main #slide img {
+  width: 100%;
+}
+#nav {
+  padding: .1rem;
+}
+#nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#nav > ul > li {
+  width: 33.33%;
+}
+#nav > ul > li a {
+  display: block;
+}
+#nav > ul > li a img {
+  width: 100%;
+}
+#banner {
+  display: flex;
+  padding: .1rem;
+}
+#banner .banner-left {
+  width: 66.66%;
+  height: 2.4rem;
+}
+#banner .banner-left a {
+  display: block;
+  font-size: 0;
+}
+#banner .banner-left a img {
+  width: 50%;
+}
+#banner .banner-right {
+  width: 33.33%;
+  height: 2.4rem;
+}
+#banner .banner-right a {
+  display: block;
+}
+#banner .banner-right a img {
+  width: 100%;
+  height: 2.4rem;
+}
+#brand {
+  padding: .1rem;
+}
+#brand > .tittle {
+  width: 100%;
+}
+#brand > .tittle a {
+  display: block;
+}
+#brand > .tittle a img {
+  width: 100%;
+}
+#brand > .content ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#brand > .content ul li {
+  width: 25%;
+}
+#brand > .content ul li a {
+  display: block;
+}
+#brand > .content ul li a img {
+  width: 100%;
+}
+#sports,
+#women,
+#man {
+  padding: .1rem;
+}
+#sports > .tittle,
+#women > .tittle,
+#man > .tittle {
+  width: 100%;
+}
+#sports > .tittle a,
+#women > .tittle a,
+#man > .tittle a {
+  display: block;
+}
+#sports > .tittle a img,
+#women > .tittle a img,
+#man > .tittle a img {
+  width: 100%;
+}
+#sports .content ul,
+#women .content ul,
+#man .content ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#sports .content ul li,
+#women .content ul li,
+#man .content ul li {
+  width: 50%;
+}
+#sports .content ul li a,
+#women .content ul li a,
+#man .content ul li a {
+  display: block;
+  box-shadow: 0 0 0.5px black;
+  background-color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+#sports .content ul li a img,
+#women .content ul li a img,
+#man .content ul li a img {
+  width: 100%;
+}
