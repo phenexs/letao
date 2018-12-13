@@ -62,10 +62,10 @@ img {
 }
 #footer ul li {
   width: 25%;
-  text-align: center;
 }
 #footer ul li a {
   color: #fff;
+  text-align: center;
   padding: .085rem;
 }
 #footer ul li a span {
@@ -74,4 +74,48 @@ img {
 body {
   padding: .45rem 0;
   height: 100vh;
+}
+body {
+  background-color: #ccc;
+}
+#main {
+  display: flex;
+}
+#main .main-left {
+  width: .8rem;
+}
+#main .main-left ul li.active a {
+  color: #006699;
+  background: #ccc;
+}
+#main .main-left ul li a {
+  display: block;
+  height: 45px;
+  text-align: center;
+  line-height: .45rem;
+  background: #fff;
+  color: #666;
+  border-bottom: 1px solid #ccc;
+  font-size: .14rem;
+}
+#main .main-right {
+  flex: 1;
+}
+#main .main-right ul {
+  padding: 10px;
+  flex-wrap: wrap;
+  display: flex;
+}
+#main .main-right ul li {
+  width: 33.33%;
+}
+#main .main-right ul li a {
+  display: block;
+  background-color: #fff;
+}
+#main .main-right ul li a img {
+  width: 100%;
+}
+#main .main-right ul li a p {
+  text-align: center;
 }

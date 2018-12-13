@@ -1,0 +1,56 @@
+@import 'base.less';
+body{
+    background-color: #ccc;
+}
+
+#main{
+    display: flex;
+.main-left{
+    width: .8rem;
+    ul{
+        li{
+            &.active{
+                a{
+                    color: @main-color;
+                    background: #ccc;
+
+                }
+            }
+            a{
+                display: block;
+                height: 45px;
+                text-align: center;
+                line-height: .45rem;
+                background: #fff; 
+                color: #666;
+                border-bottom: 1px solid #ccc;
+                font-size: .14rem;
+                 
+            }
+           
+        }
+    }
+}
+.main-right{
+    flex: 1;
+    ul{
+        padding: 10px;
+        flex-wrap: wrap;
+        display: flex;
+        li{
+            width:33.33%; 
+            a{
+                display: block;
+                background-color: #fff;
+                img{
+                    width: 100%;
+                }
+                p{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+}

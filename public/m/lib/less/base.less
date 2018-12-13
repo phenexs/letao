@@ -19,6 +19,8 @@ img{
 
 // 头部样式
 #header{
+    width: 100vw;
+    // 100vw能实现全部占满
     display: flex ;
     padding-left: .45rem;
     padding-right: .45rem;
@@ -35,15 +37,29 @@ img{
         line-height: .45rem;
         font-weight: normal;
     }
+    form{
+        width: 100%;
+        
+        padding-top: 0.05rem;
+        input{
+            background-color: #fff;
+        }
+    }
     a{
         width: .45rem;
         height: .45rem;
         position: absolute;
-        right: 0;
+       
         top:0;
         text-align: center;
         line-height: .45rem;
         color:#fff;
+        &:first-of-type{
+            left: 0;
+        }
+        &:last-of-type{
+            right: 0;
+        }
        
     }
 }
@@ -53,7 +69,6 @@ img{
     width: 100vw;
     height: .45rem;
     background-color: @main-color;
-   
     position: fixed;
    z-index: 999;
    bottom: 0;
@@ -62,9 +77,10 @@ img{
        
        li{
            width: 25%;
+           text-align: center;
            a{
             color:#fff;
-            text-align: center;
+            
             padding: .085rem;
             span{
                 display: block;
@@ -78,25 +94,25 @@ img{
 // 添加区域滚动
 // 方法一:
 
-// body{
-//     // 让内容在标题和底部显示
-//     padding: .45rem 0;
-//     height: 100vh;
-// }
+body{
+    // 让内容在标题和底部显示
+    padding: .45rem 0;
+    height: 100vh;
+}
 
 
 
 //方法二
-body{
-    height: 100vh;
-}
-#main{
-    // 继承body的高度
-    height: 100%;
-    // 给main设置相对定位
-    position: relative;
-    .mui-scroll-wrapper{
-        top: .45rem;
-        bottom: .45rem;
-    }
-}
+// body{
+//     height: 100vh;
+// }
+// #main{
+//     // 继承body的高度
+//     height: 100%;
+//     // 给main设置相对定位
+//     position: relative;
+//     .mui-scroll-wrapper{
+//         top: .45rem;
+//         bottom: .45rem;
+//     }
+// }
